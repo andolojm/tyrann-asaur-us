@@ -1,9 +1,8 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var WebpackOnBuildPlugin = require("on-build-webpack");
 var webpack = require("webpack");
-var exec = require("child_process").exec;
-var fs = require("fs");
-var path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   output: {
@@ -42,8 +41,15 @@ module.exports = {
       {
         test: /\.(pdf|jpg|png|woff|woff2|eot|ttf|svg)$/,
         loader: "file-loader?name=[name].[ext]"
+      },
+      {
+        test: /\.(html)$/,
+        loader: 'html-loader',
       }
     ]
+  },
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new ExtractTextPlugin("[name].css"),
@@ -52,6 +58,10 @@ module.exports = {
       uglifyOptions: {
         ie8: true,
       }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Jeff Andolora',
+      template: 'app/index.html'
     }),
     new WebpackOnBuildPlugin(stats => {
         console.log('Build done. TODO do things on webpack build');

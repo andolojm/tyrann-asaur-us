@@ -1,3 +1,3 @@
 webpack-cli
-sudo cp -r dist /var/www/html/
-sudo cp index.html /var/www/html/
+sudo rm /var/www/html/*
+sudo cp -r dist/* /var/www/html/
