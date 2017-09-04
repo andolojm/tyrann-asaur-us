@@ -23,7 +23,26 @@ h1, h2, h3, h4, h5, h6 {
     width: 55%;
     margin-top: 10px;
     margin-bottom: 8px;
+    line-height: 35px;
+    font-size: 30px;
 
+    // Scale down slowly as last name breaks side of screen
+    @media screen and (max-width: 435px) {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    @media screen and (max-width: 400px) {
+        line-height: 28px;
+        font-size: 24px;
+    }
+    @media screen and (max-width: 365px) {
+        line-height: 25px;
+        font-size: 22px;
+    }
+    @media screen and (max-width: 330px) {
+        line-height: 23px;
+        font-size: 20px;
+    }
 }
 #header-banner-container {
     float: left;
