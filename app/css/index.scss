@@ -15,11 +15,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Header styles
-#header {
-    text-align: center;
+#header-interior {
+    margin: auto;
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
 }
 #header-name {
     float:right;
+    text-align: center;
     width: 55%;
     margin-top: 10px;
     margin-bottom: 8px;
@@ -55,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 800px;
 }
 #header-pic {
-    position:absolute;
+    position: absolute;
     top: 15px;
     left: 25%;
     margin-left: -50px;
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Body text styles
-.body-container {
+.section {
     float: left;
     text-align: center;
     clear: both;
