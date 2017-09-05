@@ -7,6 +7,11 @@
     margin: 0;
 }
 
+body {
+    background-color: #fafafa;
+    color: #444;
+}
+
 // Font override: Headings = Bungee, if available
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bungee';
@@ -109,4 +114,28 @@ p {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     text-shadow: 0 2px 0 white;
     border-radius: 10px;
+}
+
+#footer {
+    float: left;
+    margin-top: 40px;
+    height: 110px;
+    width: 100%;
+    background-color: #e3e3e3;
+    box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#thanks {
+    margin-top: 20px;
+}
+
+#footersaurus {
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    height: 100px;
+    width: 136px;
 }
