@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1300px;
     position: relative;
 }
+
 #header-name {
     float:right;
     text-align: center;
@@ -58,11 +59,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     width: 100%;
 }
+
 #header-banner {
     margin: auto;
     width: 100%;
     max-width: 800px;
 }
+
 #header-pic {
     position: absolute;
     top: 15px;
@@ -74,11 +77,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 100px 125px;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
     @media screen and (min-width: 650px) {
         height: 175px;
         width: 140px;
         background-size: 140px 175px;
     }
+
     @media screen and (min-width: 1024px) {
         height: 200px;
         width: 160px;
@@ -94,17 +99,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding: 10px 0;
 }
+
 .body-interior {
     margin: auto;
     width: 90%;
     max-width: 450px;
 }
+
 h2 {
     margin-bottom: 5px;
 }
+
 p {
     margin: 10px 0;
 }
+
 .button-link {
     text-decoration: none;
     display: block;
@@ -114,6 +123,10 @@ p {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     text-shadow: 0 2px 0 white;
     border-radius: 10px;
+
+    &:hover {
+        background-color: #eddada;
+    }
 }
 
 #footer {
