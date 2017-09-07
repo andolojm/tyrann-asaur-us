@@ -132,7 +132,6 @@ p {
 #footer {
     float: left;
     margin-top: 40px;
-    height: 110px;
     width: 100%;
     background-color: #e3e3e3;
     box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
@@ -141,8 +140,38 @@ p {
     text-align: center;
 }
 
+.social {
+    margin: 20px 0 0 0;
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    li {
+        font-size: 50px;
+        padding: 0 12px;
+        display: inline-block;
+        border-left: 1px solid #aaa;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        @media screen and (max-width: 380px) {
+            font-size: 40px;
+            padding: 0 10px;
+        }
+
+        @media screen and (max-width: 325px) {
+            font-size: 35px;
+            padding: 0 8px;
+        }
+    }
+}
+
 #thanks {
-    margin-top: 20px;
+    margin: 20px 0;
     line-height: 34px;
     font-size: 28px;
 }
