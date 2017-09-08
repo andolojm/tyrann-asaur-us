@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack-start": "node_modules/.bin/webpack-dev-server --open",
+    "webpack-start": "node_modules/.bin/webpack-dev-server --open --host 0.0.0.0",
     "prod-install": "scripts/install.sh",
     "prod-deploy": "scripts/deploy.sh"
   },
