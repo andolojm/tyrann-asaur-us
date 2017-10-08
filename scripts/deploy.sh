@@ -1,3 +1,5 @@
+#!/bin/bash
+
 webpack-cli
-sudo rm /var/www/html/*
-sudo cp -r dist/* /var/www/html/
+sudo rm /var/www/asaur.us/public_html/*
+sudo cp -r dist/* /var/www/asaur.us/public_html/
