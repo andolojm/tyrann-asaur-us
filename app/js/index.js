@@ -1,5 +1,6 @@
 require('../css/index.scss')
 require("../../node_modules/font-awesome/scss/font-awesome.scss")
+require("csshake")
 
 // Assets to be required
 require("../img/Andolora_Jeffrey_Resume.pdf")

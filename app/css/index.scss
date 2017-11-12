@@ -27,14 +27,22 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+@keyframes header-slide-in {
+    0% { margin-top: -65px; }
+    100% { margin-top: 10px; }
+}
+
 #header-name {
-    float:right;
+    position: absolute;
+    right: 0;
     text-align: center;
     width: 55%;
     margin-top: 10px;
     margin-bottom: 8px;
     line-height: 35px;
     font-size: 30px;
+    animation-name: header-slide-in;
+    animation-duration: 2s;
 
     // Scale down slowly as last name breaks side of screen
     @media screen and (max-width: 435px) {
@@ -54,14 +62,15 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
     }
 }
+
 #header-banner-container {
-    float: left;
     margin: 0 0 10px 0;
     width: 100%;
 }
 
 #header-banner {
     margin: auto;
+    padding-top: 85px;
     width: 100%;
     max-width: 800px;
 }
@@ -156,6 +165,10 @@ p {
     a {
         text-decoration: none;
         color: #444;
+
+        &:hover {
+            color: #777;
+        }
     }
 
     li {
