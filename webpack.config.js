@@ -15,27 +15,17 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css/,
-        loader: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
         })
       },
       {
-        test: /\.scss/,
-        loader: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                minimize: true
-              }
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
+        test: /\.*(sass|scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
         })
       },
       {
