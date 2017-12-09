@@ -1,0 +1,129 @@
+// Printable Resume SCSS
+
+#resume {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+  width: 100%;
+  margin: 0;
+
+  // Comment this out to display resume for development purposes
+  // TODO: Add a URL argument to display resume
+  @media screen {
+      display: none;
+      padding: 0 !important;
+      margin: 0 !important;
+  }
+}
+
+#resume-interior {
+  margin: 0 auto;
+  width: 850px;
+  height: 1100px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#resume-left {
+  background: $color-alt-background;
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+
+#resume-right {
+  float: right;
+  clear: none;
+  text-align: left;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 67%;
+}
+
+#resume-name {
+  padding: 20px 0;
+  font-size: 300%;
+  line-height: 150%;
+}
+
+#resume-image {
+  border-radius: 45%;
+  max-width: 90%;
+  height: 200px;
+}
+
+#resume-contact {
+  padding: 60px 0;
+}
+
+.resume-contact-item {
+  padding: 5px 0 0 5px;
+  text-align: left;
+}
+
+.resume-contact-image {
+  height: 35px;
+  vertical-align: middle;
+  margin-top: -6px;
+}
+
+.resume-contact-text {
+  color: $color-text;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-left: 2px;
+  text-decoration: none;
+  font-size: 108%;
+
+  &:visited {
+      color: $color-text;
+  }
+
+  &:hover {
+      color: $color-highlight;
+  }
+}
+
+#resume-education {
+  padding: 0;
+  line-height: 150%;
+}
+
+.resume-education-paragraph {
+  padding: 25px 0 0 0;
+}
+
+.resume-education-bold {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.resume-title {
+  font-size: 170%;
+  padding: 5px 0 10px 0;
+  font-weight: bold;
+}
+
+.resume-red-title {
+  font-size: 130%;
+  font-weight: bold;
+  color: $color-highlight;
+}
+
+.resume-left-aligned-title {
+  padding: 0 0 6px 5px;
+}
+
+.resume-job-title {
+  font-size: 120%;
+  padding: 2px 0 6px 5px;
+}
+
+.resume-job-text {
+  padding: 0 0 18px 5px;
+  font-size: 95%;
+  line-height: 150%;
+}
+
+.resume-job-text ul li {
+  margin-left: 15px;
+  font-size: 95%;
+}
