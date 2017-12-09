@@ -6,7 +6,6 @@ require("../img/Andolora_Jeffrey_Resume.pdf")
 require("../img/header-320.png")
 require("../img/header-480.png")
 require("../img/header-768.png")
-require("../img/grey-pixel.png")
 
 // node_modules dependencies
 require("../../node_modules/csshake/scss/csshake.scss")
