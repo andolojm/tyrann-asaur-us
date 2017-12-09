@@ -2,8 +2,9 @@
 
 $color-highlight: #ca3737;
 $color-text: #444;
+$color-text-light: #777;
 $color-background: #fafafa;
-$color-alt-background: #e0e0e0;
+$color-alt-background: #eaeaea;
 
 // Body text = Arvo, unless overridden or missing
 * {
@@ -175,10 +176,10 @@ p {
 
     a {
         text-decoration: none;
-        color: #444;
+        color: $color-text;
 
         &:hover {
-            color: #777;
+            color: $color-text-light;
         }
     }
 
@@ -273,14 +274,14 @@ p {
 }
 
 .resume-contact-item {
-    padding: 10px 0 0 5px;
+    padding: 5px 0 0 5px;
     text-align: left;
 }
 
 .resume-contact-image {
     height: 35px;
     vertical-align: middle;
-    margin-top: -5px;
+    margin-top: -6px;
 }
 
 .resume-contact-text {
@@ -289,6 +290,7 @@ p {
     vertical-align: middle;
     margin-left: 2px;
     text-decoration: none;
+    font-size: 108%;
 
     &:visited {
         color: $color-text;
