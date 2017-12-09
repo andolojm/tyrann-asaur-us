@@ -1,5 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Arvo|Bungee);
 
+$color-highlight: #ca3737;
+$color-text: #444;
+$color-background: #fafafa;
+$color-alt-background: #e0e0e0;
+
 // Body text = Arvo, unless overridden or missing
 * {
     padding: 0;
@@ -13,8 +18,8 @@
 }
 
 body {
-    background-color: #fafafa;
-    color: #444;
+    background-color: $color-background;
+    color: $color-text;
     font-family: 'Arvo', 'Helvetica Neue', 'Arial';
 }
 
@@ -22,7 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bungee';
     letter-spacing: 4px;
-    text-shadow: -1px 2px 0 rgba(187,55,54,0.7);
+    text-shadow: -1px 2px 0 $color-highlight;
 }
 
 // Header styles
@@ -132,9 +137,9 @@ p {
 .button-link {
     text-decoration: none;
     display: block;
-    color: #bb3736;
+    color: $color-highlight;
     padding: 20px;
-    background: #ededed;
+    background: $color-alt-background;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     text-shadow: 0 2px 0 white;
     border-radius: 10px;
@@ -212,10 +217,14 @@ p {
     height: 100px;
     width: 136px;
 }
+
 #resume {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
     width: 100%;
+    margin: 0;
 
+    // Comment this out to display resume for development purposes
+    // TODO: Add a URL argument to display resume
     @media screen {
         display: none;
         padding: 0 !important;
@@ -226,16 +235,16 @@ p {
 #resume-interior {
     margin: 0 auto;
     width: 850px;
-    height: 1080px;
+    height: 1100px;
     position: relative;
     overflow-y: hidden;
 }
 
 #resume-left {
-    background: #ececec;
+    background: $color-alt-background;
     float: left;
     height: 100%;
-    width: 32%;
+    width: 30%;
 }
 
 #resume-right {
@@ -243,13 +252,13 @@ p {
     clear: none;
     text-align: left;
     padding-right: 10px;
-    width: 66%;
+    padding-top: 10px;
+    width: 67%;
 }
 
 #resume-name {
     padding: 20px 0;
-    font-size: 250%;
-    font-weight: bold;
+    font-size: 300%;
     line-height: 150%;
 }
 
@@ -260,38 +269,38 @@ p {
 }
 
 #resume-contact {
-    padding: 45px 0;
+    padding: 60px 0;
 }
 
 .resume-contact-item {
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 5px;
     text-align: left;
 }
 
 .resume-contact-image {
-    height: 38px;
+    height: 35px;
     vertical-align: middle;
     margin-top: -5px;
 }
 
 .resume-contact-text {
-    color: black;
+    color: $color-text;
     line-height: 50px;
     vertical-align: middle;
-    margin-left: 6px;
+    margin-left: 2px;
     text-decoration: none;
 
-    &:hover {
-        color: #dd3736;
+    &:visited {
+        color: $color-text;
     }
 
-    &:visited {
-        color: black;
+    &:hover {
+        color: $color-highlight;
     }
 }
 
 #resume-education {
-    padding: 0 0 45px 0;
+    padding: 0;
     line-height: 150%;
 }
 
@@ -313,7 +322,7 @@ p {
 .resume-red-title {
     font-size: 130%;
     font-weight: bold;
-    color: #dd3736;
+    color: $color-highlight;
 }
 
 .resume-left-aligned-title {
@@ -321,8 +330,8 @@ p {
 }
 
 .resume-job-title {
-    font-weight: bold;
-    padding: 0 0 6px 5px;
+    font-size: 120%;
+    padding: 2px 0 6px 5px;
 }
 
 .resume-job-text {
