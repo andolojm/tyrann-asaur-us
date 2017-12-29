@@ -4,6 +4,8 @@ node_js:
   - "8"
 addons:
   chrome: stable
+cache: 
+  yarn: true
 install:
   - yarn install
   - echo 'Total node_modules dependencies:'$(ls node_modules | wc -l)
