@@ -13,5 +13,8 @@ install:
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver  
 script:
-  - python -m SimpleHTTPServer 8080 &
-  - jest && webpack
+  - node_modules/.bin/webpack-dev-server --hot false &
+  - sleep 10
+  - jest
+  - for x in $(jobs -p); do kill $x; done
+  - webpack
