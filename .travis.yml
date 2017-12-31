@@ -27,6 +27,7 @@ deploy:
   bucket: tyrann.asaur.us
   local-dir: dist
   acl: public_read
+  skip_cleanup: true
   on:
     branch: master
     repo: andolojm/tyrann-asaur-us
@@ -37,6 +38,7 @@ deploy:
   bucket: tyrann-dev.asaur.us
   local-dir: dist
   acl: public_read
+  skip_cleanup: true
   on:
     branch: develop
     repo: andolojm/tyrann-asaur-us
