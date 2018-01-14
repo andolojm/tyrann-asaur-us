@@ -11,18 +11,20 @@ http://tyrann.asaur.us
     * Build process
     * Component creation
     * Testing? ...Can we test anything here?
+      * UPDATE: Yes we can!
  * Improve open-source presence
  * Create a personal brand
 
 ### Milestones
  * (✔️) Create a set of Sketches, building out from a mobile layout 
  * (✔️) Implement a 1.0 site using sketches
- * (❌) Add features to better utilize desktop screen real estate (1.2 release?)
+ * (❌ Add features to better utilize desktop screen real estate (1.2 release?)
  * (✔️) Performance / Accessiblity optimization
  * (⚠️) Add content for a 1.1 release
-    * Contact info
-    * Projects
- * (⚠️) DevOps-y things. CI/CD? Load balancing, 0 downtime deployments?
-    * Just for fun, but I should probably know how to set these up.
-    * Testing. Write some tests, you lazy sod.
+    (✔️)  Contact info
+    (❌ Projects
+ * (⚠️) DevOps-y things.
+    (✔️) Automated deployments with CI
+    (❌) Write some more tests, you lazy sod.
+    (✔️) HTTPS on s3
  * (❌) Progressive web app
