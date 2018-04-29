@@ -10,8 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "csshake": "^1.5.2",
-    "font-awesome": "^4.7.0"
+    "csshake": "^1.5.2"
   },
   "devDependencies": {
     "css-loader": "^0.28.4",

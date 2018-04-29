@@ -146,6 +146,7 @@ p {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     text-shadow: 0 2px 0 white;
     border-radius: 10px;
+    position: relative;
 
     &:hover {
         background-color: #eddada;
@@ -230,4 +231,16 @@ p {
 
 #contact {
     margin-bottom: 30px;
+}
+
+.button-svg {
+    position: absolute;
+    height: 30px;
+    top: 13px;
+    left: 13px;
+}
+
+.button-text {
+    width: 100%;
+    text-align: center;
 }
