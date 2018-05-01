@@ -13,7 +13,7 @@ This application is a static frontend configured to deploy to AWS S3.
   * Writing and Code samples
   * Dinosaurs
   * *BETA*: Print page for resume 
-    * For now, page margins need to be set to "None" and background graphics need to be enabled. 
+    * For now, page margins need to be set to "None".
     * I'm still working out browser compatibility kinks on this one. If all else fails, the PDF link works fine!
 
 ### Development
