@@ -86,7 +86,7 @@
 #resume-professional,
 #resume-additional,
 #resume-education {
- margin: 20px 40px 0;
+ margin: 20px 60px 0;
 }
 
 #resume-education {
@@ -95,17 +95,18 @@
 }
 
 .resume-title {
-  font-size: 160%;
+  font-size: 140%;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 0 0 0 -5px;
+  text-decoration: underline;
 }
 
 .resume-red-title {
-  font-size: 130%;
-  font-weight: bold;
+  font-size: 110%;
   color: $color-highlight;
   margin-top: 10px;
+  letter-spacing: 1px;
 }
 
 .resume-job-title {
@@ -116,10 +117,10 @@
 .resume-job-text {
   padding: 7px 0 0 5px;
   font-size: 90%;
-  line-height: 140%;
+  line-height: 150%;
 }
 
 .resume-job-text ul li {
-  margin: 5px 0 0 15px;
+  margin: 1px 0 0 15px;
   font-size: 95%;
 }
