@@ -76,7 +76,7 @@
 
 .resume-education-bold {
   font-weight: bold;
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .resume-education-paragraph {
@@ -91,11 +91,11 @@
 
 #resume-education {
   margin-top: 0;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .resume-title {
-  font-size: 140%;
+  font-size: 135%;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 0 0 0 -5px;
@@ -103,14 +103,13 @@
 }
 
 .resume-red-title {
-  font-size: 110%;
+  font-size: 105%;
   color: $color-highlight;
   margin-top: 10px;
   letter-spacing: 1px;
 }
 
 .resume-job-title {
-  font-size: 110%;
   padding: 7px 0 0 0;
 }
 
@@ -118,9 +117,9 @@
   padding: 7px 0 0 5px;
   font-size: 90%;
   line-height: 150%;
-}
 
-.resume-job-text ul li {
-  margin: 1px 0 0 15px;
-  font-size: 95%;
+  ul li {
+    margin: 0 0 5px 0;
+    list-style: none;
+  }
 }
