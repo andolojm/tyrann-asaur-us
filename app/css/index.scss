@@ -26,14 +26,12 @@ body {
     }
 }
 
-// Font override: Headings = Bungee, if available
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bungee';
     letter-spacing: 4px;
     text-shadow: -1px 2px 0 $color-highlight;
 }
 
-// Header styles
 #header-interior {
     margin: auto;
     width: 100%;
@@ -114,7 +112,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-// Body text styles
 .section {
     float: left;
     text-align: center;
