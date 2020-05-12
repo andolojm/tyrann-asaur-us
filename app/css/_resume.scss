@@ -1,5 +1,6 @@
 #resume {
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, serif !important;
   width: 100%;
   margin: 0;
   text-align: left;
@@ -7,9 +8,9 @@
   // Comment this out to display resume for development purposes
   // TODO: Add a URL argument to display resume
   @media screen {
-      display: none;
-      padding: 0 !important;
-      margin: 0 !important;
+    display: none;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
@@ -69,11 +70,11 @@
   font-size: 99%;
 
   &:visited {
-      color: $color-text;
+    color: $color-text;
   }
 
   &:hover {
-      color: $color-highlight;
+    color: $color-highlight;
   }
 }
 
@@ -89,7 +90,7 @@
 #resume-professional,
 #resume-additional,
 #resume-education {
- margin: 20px 60px 0;
+  margin: 20px 60px 0;
 }
 
 #resume-education {
