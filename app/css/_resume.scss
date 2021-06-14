@@ -6,9 +6,8 @@
   text-align: left;
 
   // Comment this out to display resume for development purposes
-  // TODO: Add a URL argument to display resume
   @media screen {
-    //display: none;
+    display: none;
     padding: 0 !important;
     margin: 0 !important;
   }
