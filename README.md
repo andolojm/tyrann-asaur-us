@@ -2,7 +2,7 @@
 
 https://tyrann.asaur.us
 
-![TravisCI status](https://travis-ci.org/andolojm/tyrann-asaur-us.svg?branch=master "TravisCI status")
+![TravisCI status](https://www.travis-ci.com/github/andolojm/tyrann-asaur-us)
 
 This application is a static frontend configured to deploy to AWS S3.
 
