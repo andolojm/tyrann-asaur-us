@@ -97,6 +97,13 @@
   padding-top: 50px;
 }
 
+#resume-additional {
+  float: right;
+  text-align: right;
+  margin-top: -140px;
+  width: 50%;
+}
+
 .resume-title {
   font-size: 135%;
   font-weight: bold;
@@ -125,4 +132,8 @@
     margin: 0 0 5px 0;
     list-style: none;
   }
+}
+
+.resume-client {
+  margin: 0 0 15px 0;
 }
