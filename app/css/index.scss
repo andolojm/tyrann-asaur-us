@@ -26,6 +26,13 @@ body {
     }
 }
 
+#container {
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bungee';
     letter-spacing: 4px;
@@ -76,7 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header-banner-container {
-    margin: 0 0 10px 0;
     width: 100%;
 }
 
@@ -84,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding-top: 85px;
     width: 100%;
-    max-width: 800px;
 }
 
 #header-pic {
@@ -94,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -50px;
     height: 125px;
     width: 100px;
-    background: url('../img/jeff-andolora-4x6-small.png');
+    background: url('../img/Jeff_Andolora_4x6_Small.png');
     background-size: 100px 125px;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
@@ -113,17 +118,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    float: left;
     text-align: center;
     clear: both;
     width: 100%;
-    margin: 10px 0;
 }
 
 .body-interior {
-    margin: auto;
+    margin: 20px auto;
     width: 90%;
-    max-width: 450px;
+    max-width: 400px;
+    text-align: center;
 }
 
 h2 {
@@ -160,20 +164,7 @@ p {
     }
 }
 
-#footer {
-    float: left;
-    margin-top: 40px;
-    width: 100%;
-    background-color: $color-alt-background;
-    box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
 .social {
-    margin: 20px 0 0 0;
-
     a {
         text-decoration: none;
         color: $color-text;
@@ -211,10 +202,36 @@ p {
     font-size: 28px;
 }
 
+#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
 #footersaurus {
     position: absolute;
-    bottom: -15px;
-    right: -60px;
+    bottom: 0;
+    right: 0;
+    height: 180px;
+
+    @media screen and (max-width: 600px) {
+        right: -75px;
+        height: 140px;
+    }
+}
+
+#footersaurus-jr-wrapper {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media screen and (max-width: 600px) {
+        bottom: 0;
+        left: -75px;
+    }
+}
+
+#footersaurus-jr {
     height: 120px;
 }
 
@@ -227,7 +244,7 @@ p {
 }
 
 #contact {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .button-svg {

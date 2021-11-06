@@ -2,7 +2,7 @@
 
 https://tyrann.asaur.us
 
-![TravisCI status](https://www.travis-ci.com/github/andolojm/tyrann-asaur-us)
+[![Build Status](https://app.travis-ci.com/andolojm/tyrann-asaur-us.svg?branch=master)](https://app.travis-ci.com/andolojm/tyrann-asaur-us)
 
 This application is a static frontend configured to deploy to AWS S3.
 
@@ -12,9 +12,9 @@ This application is a static frontend configured to deploy to AWS S3.
   * Dinosaurs
   * Writing and Code samples
   * Dinosaurs
-  * *BETA*: Print page for resume
+  * *ALMOST FUNCTIONAL*: Print page for resume
     * For now, page margins need to be set to "None".
-    * I'm still working out browser compatibility kinks on this one. If all else fails, the PDF link works fine!
+    * I'm still (okay, may never finish) working out browser compatibility kinks on this one. If all else fails, the PDF link works fine!
 
 ### Development
 

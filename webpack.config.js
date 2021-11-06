@@ -1,5 +1,4 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var WebpackOnBuildPlugin = require("on-build-webpack");
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -52,9 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Jeff Andolora',
       template: 'app/index.html'
-    }),
-    new WebpackOnBuildPlugin(stats => {
-        console.log('Build done. TODO do things on webpack build');
     })
   ]
 };

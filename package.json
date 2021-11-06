@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack-start": "node_modules/.bin/webpack-dev-server --open --host 0.0.0.0",
-    "prod-install": "scripts/install.sh",
-    "prod-deploy": "scripts/deploy.sh"
+    "start": "node_modules/.bin/webpack-dev-server --open --host 0.0.0.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,7 +17,7 @@
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "jest-cli": "^22.0.4",
-    "node-sass": "^4.5.3",
+    "node-sass": "^6.0.1",
     "on-build-webpack": "^0.1.0",
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.0",
