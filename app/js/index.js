@@ -1,6 +1,6 @@
 require('../css/index.scss')
 
-require("../img/Andolora_Jeffrey_Resume.pdf")
+require("../img/Andolora_Jeff_Resume.pdf")
 require("../img/header-320.png")
 require("../img/header-480.png")
 require("../img/header-768.png")
