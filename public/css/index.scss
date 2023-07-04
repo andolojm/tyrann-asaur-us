@@ -1,0 +1,268 @@
+@import url(//fonts.googleapis.com/css?family=Arvo|Bungee);
+
+@import 'colors';
+@import 'resume';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media print {
+  .hide-print {
+    display: none;
+  }
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: 'Arvo', 'Helvetica Neue', 'Arial';
+
+  // Prevent printing grey pages
+  @media print {
+    background-color: #fff;
+  }
+}
+
+#container {
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bungee';
+  letter-spacing: 4px;
+  text-shadow: -1px 2px 0 $color-highlight;
+}
+
+#header-interior {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+@keyframes header-slide-in {
+  0% {
+    margin-top: -65px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+#header-name {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 55%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  line-height: 35px;
+  font-size: 30px;
+  animation-name: header-slide-in;
+  animation-duration: 2s;
+
+  // Scale down slowly as last name breaks side of screen
+  @media screen and (max-width: 435px) {
+    line-height: 30px;
+    font-size: 26px;
+  }
+  @media screen and (max-width: 400px) {
+    line-height: 28px;
+    font-size: 24px;
+  }
+  @media screen and (max-width: 365px) {
+    line-height: 25px;
+    font-size: 22px;
+  }
+  @media screen and (max-width: 330px) {
+    line-height: 23px;
+    font-size: 20px;
+  }
+}
+
+#header-banner-container {
+  width: 100%;
+}
+
+#header-banner {
+  margin: auto;
+  padding-top: 85px;
+  width: 100%;
+}
+
+#header-pic {
+  position: absolute;
+  top: 15px;
+  left: 22.5%;
+  margin-left: -50px;
+  height: 125px;
+  width: 100px;
+  background: url('../public/Jeff_Andolora_4x6_Small.png');
+  background-size: 100px 125px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+  @media screen and (min-width: 650px) {
+    height: 175px;
+    width: 140px;
+    background-size: 140px 175px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 200px;
+    width: 160px;
+    background-size: 160px 200px;
+  }
+}
+
+.section {
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+
+.body-interior {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 18px 0;
+}
+
+.button-link {
+  text-decoration: none;
+  display: block;
+  color: $color-highlight;
+  padding: 20px;
+  background: $color-alt-background;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 0 white;
+  border-radius: 10px;
+  position: relative;
+
+  &:hover {
+    background-color: #eddada;
+  }
+}
+
+#projects {
+  max-width: 350px;
+  margin: 0 auto;
+
+  li {
+    padding: 6px 0;
+    list-style: none;
+  }
+}
+
+.social {
+  a {
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      color: $color-text-light;
+    }
+  }
+
+  li {
+    font-size: 50px;
+    padding: 0 12px;
+    display: inline-block;
+    border-left: 1px solid #aaa;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    @media screen and (max-width: 380px) {
+      font-size: 40px;
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: 325px) {
+      font-size: 35px;
+      padding: 0 8px;
+    }
+  }
+}
+
+#thanks {
+  margin: 20px 0;
+  line-height: 34px;
+  font-size: 28px;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#footersaurus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 180px;
+
+  @media screen and (max-width: 600px) {
+    right: -75px;
+    height: 140px;
+  }
+}
+
+#footersaurus-jr-wrapper {
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media screen and (max-width: 600px) {
+    bottom: 0;
+    left: -75px;
+  }
+}
+
+#footersaurus-jr {
+  height: 120px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#contact {
+  margin: 30px 0;
+}
+
+.button-svg {
+  position: absolute;
+  height: 30px;
+  top: 13px;
+  left: 13px;
+}
+
+.button-text {
+  width: 100%;
+  text-align: center;
+}

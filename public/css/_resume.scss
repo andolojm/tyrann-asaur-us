@@ -1,8 +1,7 @@
 $gutter-size: 40px;
 
 #resume {
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, serif !important;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif !important;
   width: 100%;
   margin: 0;
   text-align: left;
@@ -22,7 +21,6 @@ $gutter-size: 40px;
   position: relative;
   background: white;
   overflow-y: hidden;
-  position: relative;
 }
 
 #resume-name {
@@ -85,24 +83,34 @@ $gutter-size: 40px;
   font-size: 100%;
 }
 
+.resume-education-details {
+  line-height: 125%;
+  margin-top: 3px;
+}
+
 .resume-education-paragraph {
   padding: 10px 0 0 0;
 }
 
-#resume-education {
-  margin: $gutter-size+15 0 0 $gutter-size;
+#resume-additional {
+  margin: 15px 0 $gutter-size $gutter-size;
+  max-width: 550px;
 }
 
 #resume-professional {
-  margin: 15px $gutter-size 0 $gutter-size;
+  margin: $gutter-size + 15px $gutter-size 0 $gutter-size;
 }
 
-#resume-additional {
+#resume-job-ketch {
+  max-width: 500px;
+}
+
+#resume-education {
   position: absolute;
   bottom: $gutter-size;
   right: $gutter-size;
   text-align: right;
-  width: 50%;
+  width: 70%;
 }
 
 .resume-title {
